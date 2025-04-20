@@ -17,15 +17,15 @@ class _SplashPageState extends State<SplashPage>
   void initState() {
     super.initState();
 
-    // Começa o fade após 1.5 segundos
-    Future.delayed(const Duration(milliseconds: 1500), () {
+    // Começa o fade após 2.5 segundos
+    Future.delayed(const Duration(milliseconds: 2500), () {
       setState(() {
         _opacity = 0.0;
       });
     });
 
-    // Troca de tela após 2.5 segundos
-    Future.delayed(const Duration(milliseconds: 2500), () {
+    // Troca de tela após 5 segundos
+    Future.delayed(const Duration(milliseconds: 5000), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => const LoginPage()),
       );
