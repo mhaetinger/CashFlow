@@ -24,8 +24,8 @@ class _SplashPageState extends State<SplashPage>
       });
     });
 
-    // Troca de tela após 5 segundos
-    Future.delayed(const Duration(milliseconds: 5000), () {
+    // Troca de tela após 3 segundos
+    Future.delayed(const Duration(milliseconds: 3000), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => const LoginPage()),
       );
